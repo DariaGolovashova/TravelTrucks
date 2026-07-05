@@ -149,17 +149,6 @@ const CamperDetailsPage = () => {
                 <span>{camper.consumption}</span>
               </div>
             </div>
-            {/* <div className={css.detailsItem}>
-              <span>{camper.transmission}</span>
-            </div>
-
-            <div className={css.detailsItem}>
-              <span>{camper.engine}</span>
-            </div>
-
-            <div className={css.detailsItem}>
-              <span>{camper.form}</span>
-            </div> */}
           </div>
         </div>
       </Container>

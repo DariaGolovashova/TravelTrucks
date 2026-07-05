@@ -20,7 +20,7 @@
   width: 888px;
 }
 
-.byttonMore {
+.buttonMore {
   width: 100%;
   max-width: 145px;
   margin: auto;
@@ -36,4 +36,68 @@
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 500;
+}
+
+.notFound {
+  margin: auto;
+}
+.notFound h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 24px 160px;
+}
+.notFound p {
+  padding: 24px 90px;
+}
+.buttons {
+  display: flex;
+  gap: 24px;
+  padding-left: 48px;
+}
+
+.clearButton {
+  width: 100%;
+  max-width: 192px;
+  height: 56px;
+
+  border-radius: 200px;
+  border: 1px solid #dadde1;
+
+  background: white;
+
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  transition: 0.2s;
+  margin-left: 5px;
+}
+
+.clearButton:hover {
+  border: 1px solid #6d7b75;
+}
+
+.searchButton {
+  width: 100%;
+  max-width: 192px;
+  height: 56px;
+
+  border: none;
+  border-radius: 200px;
+
+  background: #829b91;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.searchButton:hover {
+  background: #6d7b75;
 }
