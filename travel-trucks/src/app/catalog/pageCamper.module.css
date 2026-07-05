@@ -1,0 +1,39 @@
+.filters {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 63px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+.sidebar {
+  width: 360px;
+  flex-shrink: 0;
+  background-color: #f7f7f7;
+}
+
+.pageContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 888px;
+}
+
+.byttonMore {
+  width: 100%;
+  max-width: 145px;
+  margin: auto;
+  height: 56px;
+  padding: 16px 32px;
+
+  border: 1 inner #dadde1;
+  border-radius: 200px;
+
+  gap: 10px;
+
+  color: #101828;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
