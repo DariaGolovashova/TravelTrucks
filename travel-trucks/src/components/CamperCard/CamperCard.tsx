@@ -15,7 +15,13 @@ interface CamperCardProps {
 const CamperCard = ({ camper }: CamperCardProps) => {
   return (
     <div className={css.camperCard}>
-      <img src={camper.coverImage} width={200} className={css.camperImage} />
+      <Image
+        src={camper.coverImage}
+        width={219}
+        height={240}
+        className={css.camperImage}
+        alt="camperImage"
+      />
       <div className={css.camperDetails}>
         <div className={css.camperTittle}>
           <h2>{camper.name}</h2>

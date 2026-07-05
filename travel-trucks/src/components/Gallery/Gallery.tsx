@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import css from './Gallery.module.css';
+import Image from 'next/image';
 
 interface GalleryProps {
   gallery: {
@@ -16,11 +17,19 @@ const Gallery = ({ gallery }: GalleryProps) => {
   if (!gallery.length) return null;
   return (
     <div className={css.galery}>
-      <img src={activeImage} className={css.mainImage} alt="" />
+      <Image
+        width={638}
+        height={505}
+        src={activeImage}
+        className={css.mainImage}
+        alt="mainImage"
+      />
 
       <div className={css.thumbs}>
         {gallery.map((image) => (
-          <img
+          <Image
+            width={136}
+            height={144}
             key={image.id}
             src={image.thumb}
             alt=""
