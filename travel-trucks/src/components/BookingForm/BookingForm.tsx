@@ -58,10 +58,6 @@ const BookingForm = ({ camperId }: BookingProps) => {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    // if (!name.trim() || !email.trim()) {
-    //   toast.error('Fill all fields');
-    //   return;
-    // }
     if (!validate()) return;
     bookingMutation.mutate({
       name,
@@ -73,7 +69,6 @@ const BookingForm = ({ camperId }: BookingProps) => {
       <h3> Book your campervan now</h3>
       <p>Stay connected! We are always ready to help you.</p>
       <input
-        // className={css.inputBooking}
         className={`${css.inputBooking} ${nameEr ? css.error : ''}`}
         placeholder="Name*"
         value={name}
@@ -82,7 +77,6 @@ const BookingForm = ({ camperId }: BookingProps) => {
       {nameEr && <p className={css.errorText}>{nameEr}</p>}
 
       <input
-        // className={css.inputBooking}
         className={`${css.inputBooking} ${emailEr ? css.error : ''}`}
         placeholder="Email*"
         value={email}

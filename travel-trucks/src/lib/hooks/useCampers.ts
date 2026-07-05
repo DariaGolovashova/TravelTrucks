@@ -22,7 +22,6 @@ export const useCampers = (filters: CamperFiltres = {}) => {
       return getCampers({
         page: pageParam,
         perPage: 4,
-        // ...filters,
         ...cleanFilters,
       });
     },

@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { useCampers } from '@/src/lib/hooks/useCampers';
 import Header from '@/src/components/Header/Header';
-// import CamperCard from '@/src/components/CamperCard/CamperCard';
 import Filters from '@/src/components/Filters/Filters';
 import CamperList from '@/src/components/CamperList/CamperList';
 import css from './pageCamper.module.css';
@@ -56,11 +55,6 @@ const CatalogPage = () => {
     setFilters(emptyFilters);
     setSearchFilters(emptyFilters);
   };
-
-  // const { data, isLoading, fetchNextPage, hasNextPage, isFetchingNextPage } =
-  //   useCampers(filters);
-
-  // if (isLoading) return <p>Loading...</p>;
 
   const campers = data?.pages.flatMap((page) => page.campers) ?? [];
 

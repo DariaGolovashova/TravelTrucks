@@ -1,11 +1,12 @@
 import QueryProvider from '../providers/QueryProvider';
 import './globals.css';
+import { Toaster } from 'react-hot-toast';
 
 export const metadata = {
   metadataBase: new URL('http://localhost:3001'),
   title: 'TravelTrucks',
 };
-// const queryClient = new QueryClient();
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -14,7 +15,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <QueryProvider>{children}</QueryProvider>
+        <QueryProvider>
+          {children} <Toaster position="top-right" />
+        </QueryProvider>
       </body>
     </html>
   );

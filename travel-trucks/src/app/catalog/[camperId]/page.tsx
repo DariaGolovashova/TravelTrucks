@@ -1,16 +1,11 @@
 'use client';
 
-// import { useEffect, useState } from 'react';
-import toast from 'react-hot-toast';
-import { useQuery, useMutation } from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 import { useParams } from 'next/navigation';
 import { getCamperById, getCamperReviews } from '@/src/lib/api/camper';
 import Gallery from '@/src/components/Gallery/Gallery';
 
-// import type { Camper } from '@/src/types/Camper';
-// import { useCampers } from '@/src/lib/hooks/useCampers';
 import Header from '@/src/components/Header/Header';
-// import { getCamperById, getCamperReviews, createBooking } from '@/src/lib/api/camper';
 
 import css from './pageCamperId.module.css';
 import Reviews from '@/src/components/Reviews/Reviews';
@@ -72,26 +67,12 @@ const CamperDetailsPage = () => {
             <h2>{camper.name}</h2>
 
             <div className={css.location}>
-              {/* <span>{camper.rating}</span>
-            <span>{camper.location}</span> */}
               <div className={css.ratingItem}>
-                <Image
-                  src={starIcon}
-                  alt="Rating"
-                  width={16}
-                  height={16}
-                  // className={css.starIcon}
-                />
+                <Image src={starIcon} alt="Rating" width={16} height={16} />
                 <span>{camper.rating}</span>
               </div>
               <div className={css.ratingItem}>
-                <Image
-                  src={mapIcon}
-                  alt="Map"
-                  width={16}
-                  height={16}
-                  // className={css.mapIcon}
-                />
+                <Image src={mapIcon} alt="Map" width={16} height={16} />
                 <span>{camper.location}</span>
               </div>
             </div>
