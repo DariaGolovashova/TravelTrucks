@@ -46,3 +46,16 @@ GET /campers/{camperID}/reviews Get reviews for cpecific camper
 POST /campers/{camperID}/booking-request Create a booking request for specific camper
 
 # Installation
+git clone https://github.com/DariaGolovashova/TravelTrucks
+cd traveltrucks
+npm install
+
+# Run Project
+npm run dev
+open http://localhost:3001/
+
+# Author
+Daria Golovashova
+
+# License
+This project is part of a learning assignment and is not intended for production use.
